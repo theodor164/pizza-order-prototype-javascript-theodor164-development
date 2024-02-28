@@ -1,0 +1,29 @@
+{
+    "name": "pizza-order-prototype-javascript-theodor164",
+    "version": "1.0.0",
+    "description": "No starter code is provided. Start from scratch!",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon backend/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-theodor164.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-theodor164/issues"
+    },
+    "homepage": "https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-theodor164#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "nodemon": "^2.0.20",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "eslint": "^8.26.0"
+    }
+}

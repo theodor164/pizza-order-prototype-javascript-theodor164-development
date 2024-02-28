@@ -1,0 +1,31 @@
+.allergens-filter-button {
+    background-color: #762146;
+    cursor: pointer;
+    font-size: 2.4em;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.allergens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 8px;
+    background-color: black;
+}
+
+.allergens {
+    background-color: #762146;
+    border: 1px solid white;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.changed {
+    background-color: #d46a97;
+}
+
+.hide {
+    display: none;
+}

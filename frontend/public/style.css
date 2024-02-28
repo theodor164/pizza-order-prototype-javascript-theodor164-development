@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap%27');
+* {
+    font-family: Overpass;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: '';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3,
+#our-story > div > p {
+    background-color: #762146;
+    margin: 1px;
+}
+
+#number-of-products {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #d46a97;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#remove-item {
+    display: inline-block;
+    scale: 1.5;
+    margin-left: auto;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+@media only screen and (min-width: 1090px) {
+    #our-story > div {
+        display: flex;
+    }
+
+    #our-story > div > img {
+        flex: 1 1 0;
+        width: 0;
+    }
+
+    h3 {
+        background-color: #16060d;
+    }
+
+    #our-story > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 0;
+        width: 0;
+        background-color: #16060d;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,33 @@
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .footer-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+    }
+}

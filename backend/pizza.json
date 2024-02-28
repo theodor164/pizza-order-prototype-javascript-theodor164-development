@@ -1,0 +1,137 @@
+{
+    "pizza": [
+        {
+            "id": 1,
+            "image": "/public/images/pizza1.png",
+            "name": "Marinara",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "garlic",
+                "oregano",
+                "olive oil"
+            ],
+            "price": 32,
+            "allergens": [1]
+        },
+        {
+            "id": 2,
+            "image": "/public/images/pizza2.png",
+            "name": "Margherita",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "mozzarella cheese",
+                "fresh basil",
+                "garlic",
+                "oregano",
+                "olive oil"
+            ],
+            "price": 28,
+            "allergens": [1, 2]
+        },
+        {
+            "id": 3,
+            "image": "/public/images/pizza3.png",
+            "name": "Pepperoni",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "Salami",
+                "garlic",
+                "olive oil"
+            ],
+            "price": 34,
+            "allergens": [1, 2]
+        },
+        {
+            "id": 4,
+            "image": "/public/images/pizza4.png",
+            "name": "Quattro Formaggi",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "mozzarella",
+                "parmesan cheese",
+                "blue cheese",
+                "brie cheese",
+                "garlic",
+                "oregano",
+                "nuts",
+                "olive oil"
+            ],
+            "price": 42,
+            "allergens": [5, 4]
+        },
+        {
+            "id": 5,
+            "image": "/public/images/pizza5.png",
+            "name": "Quattro Stagionni",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "garlic",
+                "olives",
+                "corn",
+                "bell pepper",
+                "ham",
+                "oregano",
+                "olive oil"
+            ],
+            "price": 36,
+            "allergens": [1, 2]
+        },
+        {
+            "id": 6,
+            "image": "/public/images/pizza6.png",
+            "name": "Pescara",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "garlic",
+                "basil",
+                "tuna fish",
+                "oregano",
+                "olive oil"
+            ],
+            "price": 32,
+            "allergens": [1, 2, 6]
+        },
+        {
+            "id": 7,
+            "image": "/public/images/pizza3.png",
+            "name": "Veggie",
+            "ingredients": [
+                "San Marzano tomato sauce",
+                "garlic",
+                "zucchini",
+                "bell pepper",
+                "olives",
+                "oregano",
+                "olive oil"
+            ],
+            "price": 38,
+            "allergens": [1]
+        }
+    ],
+    "allergens": [
+        {
+            "id": 1,
+            "name": "gluten"
+        },
+        {
+            "id": 2,
+            "name": "milk"
+        },
+        {
+            "id": 3,
+            "name": "soy"
+        },
+        {
+            "id": 4,
+            "name": "egg"
+        },
+        {
+            "id": 5,
+            "name": "nuts"
+        },
+        {
+            "id": 6,
+            "name": "fish"
+        }
+    ]
+}

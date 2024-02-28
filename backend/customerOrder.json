@@ -1,0 +1,37 @@
+{
+    "orders": [
+        {
+            "id": 1,
+            "pizzas": {
+                "total": 28,
+                "numberOfItems": 1,
+                "list": [{ "name": "Margherita", "amount": 1 }]
+            },
+            "date": "2022-11-05T12:31:14.425Z",
+            "customer": {
+                "firstName": "Theodor",
+                "lastName": "Tanase",
+                "adress": "tanase.ted.164@gmail.com",
+                "email": "tanase.ted.164@gmail.com"
+            }
+        },
+        {
+            "id": 2,
+            "pizzas": {
+                "total": 62,
+                "numberOfItems": 2,
+                "list": [
+                    { "name": "Pepperoni", "amount": 1 },
+                    { "name": "Margherita", "amount": 1 }
+                ]
+            },
+            "date": "2022-11-05T12:32:16.467Z",
+            "customer": {
+                "firstName": "Theodor",
+                "lastName": "Tanase",
+                "adress": "tanase.ted.164@gmail.com",
+                "email": "tanase.ted.164@gmail.com"
+            }
+        }
+    ]
+}
