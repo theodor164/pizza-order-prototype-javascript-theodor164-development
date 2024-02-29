@@ -36,7 +36,11 @@ function cartItems(orders) {
 
 const loadEvent = async () => {
     async function getData() {
-        return await (await fetch(`http://127.0.0.1:9000/pizza/orders`)).json();
+        return await (
+            await fetch(
+                `https://pizza-order-prototype-javascript.onrender.com/pizza/orders`
+            )
+        ).json();
     }
     const myOrders = await getData();
     const rootElement = document.getElementById('root');
@@ -44,7 +48,9 @@ const loadEvent = async () => {
     rootElement.insertAdjacentHTML('beforeend', cartItems(myOrders));
 
     const orderItemsCopy = await (
-        await fetch('http://127.0.0.1:9000/pizza/orders')
+        await fetch(
+            'https://pizza-order-prototype-javascript.onrender.com/pizza/orders'
+        )
     ).json();
     let orderItems;
     if (orderItemsCopy.length > 0) {
@@ -86,13 +92,16 @@ const loadEvent = async () => {
             if (orderItems.total === 0) {
                 document.querySelector('#form').classList.add('hide');
             }
-            await fetch(`http://127.0.0.1:9000/pizza/orders`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(orderItems)
-            });
+            await fetch(
+                `https://pizza-order-prototype-javascript.onrender.com/pizza/orders`,
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(orderItems)
+                }
+            );
         });
     });
 
@@ -115,13 +124,16 @@ const loadEvent = async () => {
                     break;
                 }
             }
-            await fetch(`http://127.0.0.1:9000/pizza/orders`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(orderItems)
-            });
+            await fetch(
+                `https://pizza-order-prototype-javascript.onrender.com/pizza/orders`,
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(orderItems)
+                }
+            );
         });
     });
     const decreaseCount = document.querySelectorAll('.decrease-count');
@@ -144,13 +156,16 @@ const loadEvent = async () => {
                         break;
                     }
                 }
-                await fetch(`http://127.0.0.1:9000/pizza/orders`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(orderItems)
-                });
+                await fetch(
+                    `https://pizza-order-prototype-javascript.onrender.com/pizza/orders`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(orderItems)
+                    }
+                );
             }
         });
     });
@@ -194,13 +209,16 @@ const loadEvent = async () => {
             document.querySelector('#form').classList.add('hide');
             document.querySelector('#order-sent').classList.remove('hide');
 
-            await fetch(`http://127.0.0.1:9000/pizza/orders/customers`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(orderSchema)
-            });
+            await fetch(
+                `https://pizza-order-prototype-javascript.onrender.com/pizza/orders/customers`,
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(orderSchema)
+                }
+            );
         } else {
             alert('Fill all the fields!');
         }
@@ -213,9 +231,12 @@ const loadEvent = async () => {
             document.querySelector('#adress').value !== '' &&
             document.querySelector('#email').value !== ''
         ) {
-            await fetch(`http://127.0.0.1:9000/pizza/orders`, {
-                method: 'DELETE'
-            });
+            await fetch(
+                `https://pizza-order-prototype-javascript.onrender.com/pizza/orders`,
+                {
+                    method: 'DELETE'
+                }
+            );
         }
     });
 };
