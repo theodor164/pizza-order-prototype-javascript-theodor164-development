@@ -121,7 +121,7 @@ async function getData(str) {
     return await (await fetch(`https://pizza-order-prototype-javascript.onrender.com/api/${str}`)).json();
 }
 async function getOrders(str) {
-    return await (await fetch(`/pizza/${str}`)).json();
+    return await (await fetch(`https://pizza-order-prototype-javascript.onrender.com/pizza/${str}`)).json();
 }
 
 function displayallergensList(
@@ -304,7 +304,7 @@ const loadEvent = async () => {
 
     const selectedAlergens = [];
     const orderItemsCopy = await (
-        await fetch('http://127.0.0.1:9000/pizza/orders')
+        await fetch('https://pizza-order-prototype-javascript.onrender.com/pizza/orders')
     ).json();
 
     if (orderItemsCopy.length > 0) {
@@ -506,7 +506,7 @@ const loadEvent = async () => {
 
     const orderNow = document.querySelector('#order');
     orderNow.addEventListener('click', async (e) => {
-        await fetch(`http://127.0.0.1:9000/pizza/orders`, {
+        await fetch(`https://pizza-order-prototype-javascript.onrender.com/pizza/orders`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -581,7 +581,7 @@ function addItemInsideShoppingCart(orderList, orderItems, pizzas, datapizza) {
             ) === 0
         ) {
             document.querySelector('#order').classList.add('hide');
-            await fetch(`http://127.0.0.1:9000/pizza/orders`, {
+            await fetch(`https://pizza-order-prototype-javascript.onrender.com/pizza/orders`, {
                 method: 'DELETE'
             });
         }
