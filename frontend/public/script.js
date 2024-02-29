@@ -118,7 +118,7 @@ function allPizzasComponent(pizzas, selectedAlergens, allergenData) {
 }
 
 async function getData(str) {
-    return await (await fetch(`/api/${str}`)).json();
+    return await (await fetch(`https://pizza-order-prototype-javascript.onrender.com/api/${str}`)).json();
 }
 async function getOrders(str) {
     return await (await fetch(`/pizza/${str}`)).json();
